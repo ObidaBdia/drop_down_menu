@@ -1,0 +1,85 @@
+html {
+        box-sizing: border-box;
+      }
+      *,
+      *::before,
+      ::after {
+        box-sizing: inherit;
+      }
+      * {
+        margin: 0;
+        text-transform: capitalize;
+        font-family: "Cairo", sans-serif;
+        color: #fff;
+      }
+.show-when-mobile{
+        display: block;
+}.show-when-computer{
+        display: none;
+}
+/* 1: Font Awesome Hamburger Menu */
+.absolute{
+        position: absolute;
+        top: -10px;
+        right: 10px;
+}
+input{
+        display: none;
+}
+.fa-bars{
+        font-size: 30px;
+}
+.fa-solid{
+        position: absolute;
+        right: 1vw;
+}
+/* 2: Show On Click */
+.show-on-click{
+        display: none;
+}
+#burger:checked + .show-on-click{
+        display: block;
+}
+/* 3: Sub On Div */
+label{
+        font-size: 25px;
+        display: block;
+        padding: 20px;
+}
+label:hover,.fa-solid:hover, .sub-div li a:hover{
+        color: cyan;
+        letter-spacing: 2px;
+}
+.sub-div li a{
+        display: block;
+}
+.sub-div{
+        display: none;
+}
+#html:checked + .sub-div{
+        display: block;
+}
+#css:checked + .sub-div{
+        display: block;
+}
+#js:checked + .sub-div{
+        display: block;
+}
+.sub-div li{
+        font-size: 20px;
+        padding: 10px 0 10px 35px;
+}
+.main-div{
+        border-bottom: 2px solid #000;
+}
+/* 4: Sub-Sub-Div */
+.sub-sub-div{
+        display: none;
+}
+#mini:checked + .sub-sub-div{
+        display: block;
+}
+.mini-projects{
+        padding: 0;
+        font-size: 20px;
+}

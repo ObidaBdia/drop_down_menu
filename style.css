@@ -1,0 +1,98 @@
+/* General Codes */
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: "Cairo", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 1px;
+}
+html{
+    box-sizing: border-box;
+    background-color: #eee;
+}
+*,*::before,*::after{box-sizing: inherit;}
+/* Header Codes */
+header{
+    background-color: #1b1b1b;
+    color: #fff;
+}
+.show-when-computer{
+    display: flex;
+    justify-content: space-around;
+}
+.show-when-mobile{
+display: none;
+}
+.flex{
+    display: flex;
+}
+.main-list{
+    padding: 20px;
+    font-size: 25px;
+    position: relative;
+    transition: all 2s;
+}
+.main-link{
+    padding: 8px 15px;
+}
+.sub-list{
+    display: none;
+    position: absolute;
+    background-color: #1b1b1b;
+    border-top: 1px solid cyan;
+    width: 200px;
+    top: 86px;
+    left: -105px;
+}
+.main-link:hover{
+    color: cyan;
+    box-shadow: 0 0 5px cyan;
+    border-radius: 5px;
+}
+.sub-list li{
+    padding: 8px 0;
+    border: 1px solid black;
+}
+.sub-list li a:hover{
+    color: cyan;
+}
+.main-list:hover .sub-list{
+    display: block;
+    transition: all 2s;
+}
+.sub-sub-list{
+    display: none;
+    position: absolute;
+    background-color: #1b1b1b;
+    border-top: 1px solid cyan;
+    width: 200px;
+    top: 110px;
+    left: 205px;
+}
+.mini-projects:hover .sub-sub-list{
+    display: block;
+}
+main{
+    color: #1b1b1b;
+    height: calc(100vh - 160px);
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer{
+    background-color: #1b1b1b;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+span{
+    font-family: 'Rubik Puddles', cursive;
+    color: red;
+}
